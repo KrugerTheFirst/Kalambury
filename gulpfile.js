@@ -11,33 +11,25 @@ gulp.task('images', function () {
         .pipe(gulp.dest(imgDst));
 });
 
-gulp.task('css', function () {
-    var cssSrc = './src/main.css',
-        cssDst = './build/main.css/';
-
-    return gulp.src(cssSrc)
-        .pipe(gulp.dest(cssDst));
+gulp.task("scss", function () {
+    gulp.src(
+        "./src/scss/*"
+    ).pipe(scss(
+        {}
+    )).pipe(gulp.dest("./build/css/"));
 });
 
 gulp.task('minify-css', function () {
-    return gulp.src('./src/main.css')
+    return gulp.src('./build/css/*')
+        .pipe(concat('main.css'))
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('./build/main.min.css'));
 });
 
 gulp.task('scripts', function () {
     return gulp.src('./src/*.js')
-        .pipe(concat('all.js'))
+        .pipe(concat('main.js'))
         .pipe(gulp.dest('./build/'));
 });
 
-gulp.task("scss", function () {
-    gulp.src(
-        "./src/scss/*"
-    ).pipe(scss(
-        {}
-    )).pipe(gulp.dest("./build/scss/"));
-});
-
-
-gulp.task('build', ['images', 'css', 'minify-css', 'scripts', 'scss']);
+gulp.task('build', ['images', 'scss', 'minify-css', 'scripts']);
