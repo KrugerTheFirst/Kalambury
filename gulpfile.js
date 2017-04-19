@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
-var cleanCSS = require('gulp-clean-css')
+var cleanCSS = require('gulp-clean-css');
+var scss = require('gulp-scss');
 
 gulp.task('images', function () {
     var imgSrc = './src/img/*',
@@ -21,7 +22,7 @@ gulp.task('css', function () {
 gulp.task('minify-css', function () {
     return gulp.src('./src/main.css')
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest('./build/min.css'));
+        .pipe(gulp.dest('./build/main.min.css'));
 });
 
 gulp.task('scripts', function () {
@@ -30,5 +31,13 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest('./build/'));
 });
 
+gulp.task("scss", function () {
+    gulp.src(
+        "./src/scss/*"
+    ).pipe(scss(
+        {}
+    )).pipe(gulp.dest("./build/scss/"));
+});
 
-gulp.task('build', ['images', 'css', 'minify-css', 'scripts']);
+
+gulp.task('build', ['images', 'css', 'minify-css', 'scripts', 'scss']);
