@@ -23,7 +23,7 @@ gulp.task('minify-css', function () {
     return gulp.src('./build/css/*')
         .pipe(concat('main.css'))
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest('./build/main.min.css'));
+        .pipe(gulp.dest('./build/css/min'));
 });
 
 gulp.task('scripts', function () {
