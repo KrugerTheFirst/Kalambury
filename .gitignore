@@ -1,0 +1,5 @@
+.idea
+.gulp-scss-cache
+.sass-cache
+build
+node_modules
