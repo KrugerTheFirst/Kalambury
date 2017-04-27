@@ -3,7 +3,7 @@ moible
  */
 body {
   margin: 0;
-  background-image: image('build/img/bg.jpg');
+  background-image: src('./build/img/bg.jpg');
 }
 
 header {
@@ -40,11 +40,14 @@ header img {
 }
 
 #hamburger {
-  width: 90px;
-  height: 90px;
+  width: 72px;
+  height: 72px;
   background: #008066;
   float: right;
   border: 0;
+  color: white;
+  font-size: 60px;
+  margin-right: 35px;
 }
 
 .hero {
