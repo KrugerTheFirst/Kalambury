@@ -1,0 +1,26 @@
+{
+  "name": "gulpfile.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile1.js",
+  "scripts": {
+    "test": "bond"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://KrugerTheFirst@bitbucket.org/eagleprogrammer/kalambury-frontend.git"
+  },
+  "keywords": [
+    "kalambury"
+  ],
+  "author": "kruger",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/eagleprogrammer/kalambury-frontend#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-rimraf": "^0.2.1",
+    "gulp-scss": "^1.4.0"
+  }
+}
