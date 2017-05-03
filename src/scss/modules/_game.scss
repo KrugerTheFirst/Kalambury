@@ -1,0 +1,39 @@
+.game {
+  background: white;
+  height: 600px;
+  width: 90%;
+  display: block;
+  margin: 7%;
+  font-size: 65px;
+
+  &-quit {
+    float: right;
+    border: solid;
+    margin: 9px;
+    font-size: 52px;
+    padding: 5px
+  }
+
+  &-word {
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+
+  &-wrong {
+    float: left;
+    background: red;
+    margin-left: 16px;
+    padding-left: 9px;
+    padding-right: 9px
+  }
+
+  &-true{
+    float: right;
+    background: greenyellow;
+    margin-right: 16px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+}
