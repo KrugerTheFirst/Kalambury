@@ -1,0 +1,42 @@
+header {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  width: 100%;
+  height: 72px;
+  background: #008066;
+  line-height: 72px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  nav {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    height: 100%;
+    width: 35%;
+
+    a {
+      color: #ebebeb;
+      font-size: 24px;
+      text-decoration: none;
+      display: block;
+    }
+  }
+
+  img {
+    height: auto;
+    width: auto;
+  }
+
+  #hamburger {
+    width: 72px;
+    height: 72px;
+    background: #008066;
+    float: right;
+    border: 0;
+    color: white;
+    font-size: 60px;
+    margin-right: 35px;
+  }
+}

@@ -1,0 +1,47 @@
+.play {
+  font-family: 'Ubuntu', sans-serif;
+  padding-top: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+
+  &-categories {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border: solid;
+    border-right-width: 5px;
+    border-top-width: 20px;
+    border-left-width: 20px;
+    border-bottom-width: 20px;
+    font-size: 60px;
+    background: #FDB88B;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  &-start {
+    border-color: white;
+    background: #FD914A;
+    font-size: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border: solid;
+    border-left-width: 5px;
+    border-top-width: 20px;
+    border-right-width: 20px;
+    border-bottom-width: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  #hover {
+    font-size: 62px;
+    background: white;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 8px;
+  }
+}
