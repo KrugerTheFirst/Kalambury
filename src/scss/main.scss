@@ -1,14 +1,21 @@
-@import 'mixins';
 @import 'variables';
+@import 'mixins';
 @import 'modules/header';
 @import 'modules/hero';
 @import 'modules/play';
 @import 'modules/footer';
 @import 'modules/game';
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background-image: url('../build/img/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
+  background-position: center;
 }
+

@@ -10,7 +10,7 @@ gulp.task('images', function () {
 });
 
 gulp.task("scss", function () {
-    gulp.src("./src/scss/**")
+    gulp.src("./src/scss/main.scss")
         .pipe(scss({}))
         .pipe(gulp.dest("./build/"));
 });
