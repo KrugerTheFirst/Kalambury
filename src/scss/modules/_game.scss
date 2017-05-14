@@ -1,39 +1,39 @@
 .game {
+  font-family: "Ubuntu", sans-serif;
   background: white;
-  height: 600px;
-  width: 90%;
-  display: block;
-  margin: 7%;
-  font-size: 65px;
+  margin-top: 10%;
+  margin-left: 14.5%;
+  margin-right: 14.5%;
+  margin-bottom: 20%;
+
 
   &-quit {
     float: right;
-    border: solid;
-    margin: 9px;
-    font-size: 52px;
-    padding: 5px
+    margin: 10px 10px 26px 0px;
+    border: solid 1px;
+    padding: 5px;
+    color: silver;
   }
 
   &-word {
     text-align: center;
-    margin-top: 20%;
-    margin-left: 7px;
-    margin-right: 7px;
+    margin: 0px 17px 0px 17px;
+    line-height: 20px;
   }
 
   &-wrong {
     float: left;
+    margin: 36px 0px 19px 9px;
     background: red;
-    margin-left: 16px;
-    padding-left: 9px;
-    padding-right: 9px
+    padding: 10px;
+    display: block;
   }
 
-  &-true{
+  &-true {
     float: right;
+    display: block;
     background: greenyellow;
-    margin-right: 16px;
-    padding-left: 9px;
-    padding-right: 9px;
+    margin: 36px 9px 19px 0px;
+    padding: 10px;
   }
 }
