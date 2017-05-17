@@ -18,7 +18,7 @@ gulp.task("scss", function () {
 gulp.task('minify-css', function () {
     gulp.src('./build/*.css')
         .pipe(concat('main.css'))
-        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(gulp.dest('./build/'));
 });
 
@@ -34,10 +34,19 @@ gulp.task('vendor', function () {
 });
 
 gulp.task('clean', function () {
-    gulp.src('./build/*', {read: false})
+    gulp.src('./build/*', { read: false })
         .pipe(clean());
 });
 
+
+
+
+
 gulp.task('build', ['images', 'vendor', 'scss', 'minify-css', 'scripts']);
+
+
+gulp.task('watch', function () {
+    gulp.watch('src/**', ['scss', 'minify-css', 'scripts']);
+});
 
 gulp.task('deploy', ['clean', 'build']);

@@ -1,36 +1,64 @@
 .play {
   font-family: 'Ubuntu', sans-serif;
-  padding-top: 10%;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding: 80px 40px 0px 40px;
+  
+
+  &-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 10px 10px 64px;
+    clear: both;
+    height: 100%;
+    display: block;
+    position: relative;
+  }
+
+  .play button {
+    font-family: 'Ubuntu', sans-serif;
+  }
 
   &-categories {
     font-size: 19px;
     background: #FDB88B;
-    border-color: white;
-    border-width: 7px 2px 7px 7px;
-    border-style: solid;
-    padding: 20px;
+    padding: 0px;
+    width: 52px;
+    line-height: 62px;
+    margin-right: 2px;
     color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 0;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
   }
 
   &-start {
-    font-size: 19px;
+    width: 100%;
+    font-size: 29px;
     background: #FD914A;
-    border-color: white;
-    border-style: solid;
-    border-width: 7px 7px 7px 2px;
     color: white;
-    padding: 20px 50px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0px 30px;
+    line-height: 62px;
+    border: 0;
+    display: inline-block;
   }
 
-  #hover {
+  ul {
+    max-width: 700px;
+    list-style: none;
     background: white;
     color: dimgray;
-    margin: 0;
-    padding: 5px 25px 25px 38px;
-    line-height: 30px
+    margin: 2px auto;
+    padding: 10px 30px;
+    line-height: 30px;
+    display: block;
+
+    li {
+      i {
+        margin-right: 12px;
+      }
+    }
   }
 }
