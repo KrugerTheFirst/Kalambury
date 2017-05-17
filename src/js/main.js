@@ -1,5 +1,9 @@
-$(document).ready(function(){
-    $('.play-categories').click(function(){
-        $('#hover').toogleClass("main")
+$(function(){
+
+    $('[data-toogle-categories]').on('click', function(){
+        var $this = $(this),
+            $categories = $this.closest('.play').find('ul');
+
+        $categories.toggleClass('show');
     });
 });
