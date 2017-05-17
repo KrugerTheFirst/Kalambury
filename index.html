@@ -44,20 +44,30 @@
             <li><i class="fa fa-gift" aria-hidden="true"></i> Rzecz</li>
         </ul>
     </section>
+
     <section class="game">
-        <i class="fa fa-film" aria-hidden="true"></i> Film
-        <div class="game-quit">
-            <span id="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        
+        <div class="game-header">
+            <span class="game-category">
+                <i class="fa fa-film" aria-hidden="true"></i> <span data-phrase-category>Film</span>
+            </span>
+            
+            <span data-restart><i class="fa fa-times" aria-hidden="true"></i></span>
         </div>
-        <div class="game-word">
+
+        <h2 data-phrase>
             Skazani na Shawshank<br/>Skazani na Shawshank
-        </div>
-        <div class="game-wrong">
-            <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <div class="game-true">
-            <i class="fa fa-check" aria-hidden="true"></i>
-        </div>
+        </h2>
+
+
+        <span class="game-button" data-phrase-wrong>
+            <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+        </span>
+
+        <span class="game-button game-button--good" data-phrase-ok>
+            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            ODGADNIĘTE
+        </span>
     </section>
 
 
