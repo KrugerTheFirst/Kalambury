@@ -15,8 +15,22 @@ body {
   background-image: url('../build/img/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 98vh;
   background-position: center;
+
+  &.game-started {
+    .game {
+      display: block;
+    }
+
+    .play {
+      display: none;
+    }
+
+    .hero {
+      display: none;
+    }
+  }
 }
 
 

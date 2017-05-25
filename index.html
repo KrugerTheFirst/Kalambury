@@ -33,26 +33,22 @@
         <button class="play-categories" data-toogle-categories>
             <i class="fa fa-angle-down" aria-hidden="true"></i>
         </button>
-        <button class="play-start" data-toogle-start>
+        <button class="play-start" data-game-start>
             GRAJ
         </button>
     </div>
-    <ul>
-        <li><i class="fa fa-film" aria-hidden="true"></i> Film</li>
-        <li><i class="fa fa-users" aria-hidden="true"></i> Postać</li>
-        <li><i class="fa fa-comments-o" aria-hidden="true"></i> Powiedzenie</li>
-        <li><i class="fa fa-gift" aria-hidden="true"></i> Rzecz</li>
+    <ul data-categories>
     </ul>
 </section>
 
 <section class="game">
 
     <div class="game-header">
-            <span class="game-category">
-                <i class="fa fa-film" aria-hidden="true"></i> <span data-phrase-category>Film</span>
+            <span class="game-category" data-phrase-category>
+                <i class="fa fa-film" aria-hidden="true"></i> <span>Film</span>
             </span>
 
-        <span class="game-header game-header--exit" data-restart><i class="fa fa-times"
+        <span class="game-header game-header--exit" data-game-restart><i class="fa fa-times"
                                                                         aria-hidden="true"></i></span>
     </div>
 

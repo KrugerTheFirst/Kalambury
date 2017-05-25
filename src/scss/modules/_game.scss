@@ -7,6 +7,7 @@
   height: 100%;
   display: none;
 
+
   &-header {
 
     &-category {
@@ -18,6 +19,7 @@
       border: 1px solid;
       color: silver;
       padding: 2px 3px;
+      cursor: pointer;
     }
   }
 
@@ -35,6 +37,7 @@
     position: relative;
     background: red;
     float: left;
+    cursor: pointer;
 
     &--good {
       background: limegreen;
