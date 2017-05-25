@@ -6,4 +6,10 @@ $(function(){
 
         $categories.toggleClass('show');
     });
+
+    $('play').on('click', function(){
+        
+    })
 });
+
+

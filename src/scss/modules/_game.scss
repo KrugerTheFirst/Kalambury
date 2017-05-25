@@ -10,15 +10,15 @@
   &-header {
 
     &-category {
+
     }
 
-
-      &-exit {
-        float: right;
-        border: 1px solid;
-        color: silver;
-        padding: 2px 3px;
-      }
+    &--exit {
+      float: right;
+      border: 1px solid;
+      color: silver;
+      padding: 2px 3px;
+    }
   }
 
   &-text {
@@ -41,5 +41,5 @@
       float: right;
     }
   }
-  
+
 }
