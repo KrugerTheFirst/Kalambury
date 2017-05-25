@@ -1,10 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-</head>
-<body>
 
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="build/vendor/font_awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="build/main.css">
+    <script src="build/main.js"></script>
+
+</head>
+
+<body>
+<header>
+    <button id="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    <img src="src/img/logo_min.png">
+    <nav id="navigation">
+        <span id="close">X</span>
+        <a href="/html/">Home</a>
+        <a href="/html/">History</a>
+    </nav>
+</header>
+
+<section class="hero">
+    Kalambury <br/> jakich nie było
+</section>
+
+<section class="play">
+    <div class="play-container">
+        <button class="play-categories" data-toogle-categories>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
+        <button class="play-start" data-toogle-start>
+            GRAJ
+        </button>
+    </div>
+    <ul>
+        <li><i class="fa fa-film" aria-hidden="true"></i> Film</li>
+        <li><i class="fa fa-users" aria-hidden="true"></i> Postać</li>
+        <li><i class="fa fa-comments-o" aria-hidden="true"></i> Powiedzenie</li>
+        <li><i class="fa fa-gift" aria-hidden="true"></i> Rzecz</li>
+    </ul>
+</section>
+
+<section class="game">
+
+    <div class="game-header">
+            <span class="game-category">
+                <i class="fa fa-film" aria-hidden="true"></i> <span data-phrase-category>Film</span>
+            </span>
+
+        <span class="game-header game-header--exit" data-restart><i class="fa fa-times"
+                                                                        aria-hidden="true"></i></span>
+    </div>
+
+    <h2 class="game-text" data-phrase>
+        Skazani na Shawshank<br/>Skazani na Shawshank
+    </h2>
+
+
+    <span class="game-button" data-phrase-wrong>
+            <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+        </span>
+
+    <span class="game-button game-button--good" data-phrase-ok>
+            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            ODGADNIĘTE
+        </span>
+</section>
+
+
+<footer>
+    copyright 2017
+</footer>
 </body>
+
 </html>

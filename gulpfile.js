@@ -2,34 +2,51 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var cleanCSS = require('gulp-clean-css');
 var scss = require('gulp-scss');
+var clean = require('gulp-rimraf');
 
 gulp.task('images', function () {
-    var imgSrc = './src/img/*',
-        imgDst = './build/img/';
-
-    return gulp.src(imgSrc)
-        .pipe(gulp.dest(imgDst));
+    gulp.src('./src/img/**')
+        .pipe(gulp.dest('./build/img/'));
 });
 
 gulp.task("scss", function () {
-    gulp.src(
-        "./src/scss/*"
-    ).pipe(scss(
-        {}
-    )).pipe(gulp.dest("./build/css/"));
+    gulp.src("./src/scss/main.scss")
+        .pipe(scss({}))
+        .pipe(gulp.dest("./build/"));
 });
 
 gulp.task('minify-css', function () {
-    return gulp.src('./build/css/*')
+    gulp.src('./build/*.css')
         .pipe(concat('main.css'))
-        .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest('./build/css/min'));
+        .pipe(cleanCSS({ compatibility: 'ie8' }))
+        .pipe(gulp.dest('./build/'));
 });
 
 gulp.task('scripts', function () {
-    return gulp.src('./src/*.js')
+    gulp.src('./src/js/**')
         .pipe(concat('main.js'))
         .pipe(gulp.dest('./build/'));
 });
 
-gulp.task('build', ['images', 'scss', 'minify-css', 'scripts']);
+gulp.task('vendor', function () {
+    gulp.src('./src/vendor/**')
+        .pipe(gulp.dest('./build/vendor/'));
+});
+
+gulp.task('clean', function () {
+    gulp.src('./build/*', { read: false })
+        .pipe(clean());
+});
+
+
+
+
+
+gulp.task('build', ['images', 'vendor', 'scss', 'minify-css', 'scripts']);
+
+
+gulp.task('watch', function () {
+    gulp.watch('src/**', ['scss', 'minify-css', 'scripts']);
+});
+
+gulp.task('deploy', ['clean', 'build']);

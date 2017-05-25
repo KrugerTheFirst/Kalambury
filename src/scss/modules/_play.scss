@@ -1,0 +1,68 @@
+.play {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 80px 40px 0px 40px;
+  
+
+  &-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 10px 10px 64px;
+    clear: both;
+    height: 100%;
+    display: block;
+    position: relative;
+  }
+
+  .play button {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  &-categories {
+    font-size: 19px;
+    background: #FDB88B;
+    padding: 0px;
+    width: 52px;
+    line-height: 62px;
+    margin-right: 2px;
+    color: white;
+    border: 0;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+  &-start {
+    width: 100%;
+    font-size: 29px;
+    background: #FD914A;
+    color: white;
+    padding: 0px 30px;
+    line-height: 62px;
+    border: 0;
+    display: inline-block;
+  }
+
+  ul {
+    max-width: 700px;
+    list-style: none;
+    background: white;
+    color: dimgray;
+    margin: 2px auto;
+    padding: 10px 30px;
+    line-height: 30px;
+    display: none;
+
+    &.show {
+      display: block;
+    }
+
+    li {
+      i {
+        margin-right: 12px;
+      }
+    }
+  }
+}
